@@ -1,0 +1,75 @@
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    p {
+      width: 250px;
+      height: 150px;
+      border: 3px solid black;
+    }
+
+    p:nth-child(1) {
+      /* 요소(element)의 크기 보다 컨텐츠가 클 때 숨김처리 */
+      /* overflow : 넘침 */
+      overflow: hidden;
+
+
+    }
+
+    p:nth-child(2) {
+      overflow: scroll;
+
+    }
+
+    p:nth-child(3) {
+      overflow-y: scroll;
+    }
+
+    p:nth-child(4) {
+      overflow-y: auto;
+    }
+
+    p:nth-child(5) {
+      overflow: hidden;
+      /* 컨텐츠가 내용 밖으로 넘어서면 말 줄임표(...) */
+      text-overflow: ellipsis;
+      /* 빈 공간은 기본적으로 밑으로 내림 */
+      /* 밑으로 안내림, 옆으로 이어짐 */
+      white-space: nowrap;
+      height: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure corrupti odit inventore sequi. Animi
+    corporis excepturi amet praesentium laboriosam eos voluptate ex inventore? Incidunt sint magnam aperiam molestiae
+    repudiandae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias suscipit laudantium voluptatibus
+    libero ducimus necessitatibus esse veniam veritatis a, quae ab officia amet, labore nam dicta non quis, sunt aut.
+  </p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure corrupti odit inventore sequi. Animi
+    corporis excepturi amet praesentium laboriosam eos voluptate ex inventore? Incidunt sint magnam aperiam molestiae
+    repudiandae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias suscipit laudantium voluptatibus
+    libero ducimus necessitatibus esse veniam veritatis a, quae ab officia amet, labore nam dicta non quis, sunt aut.
+  </p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure corrupti odit inventore sequi. Animi
+    corporis excepturi amet praesentium laboriosam eos voluptate ex inventore? Incidunt sint magnam aperiam molestiae
+    repudiandae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias suscipit laudantium voluptatibus
+    libero ducimus necessitatibus esse veniam veritatis a, quae ab officia amet, labore nam dicta non quis, sunt aut.
+  </p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure corrupti odit inventore sequi. Animi
+    corporis excepturi amet praesentium laboriosam eos voluptate ex inventore? Incidunt sint magnam aperiam molestiae
+    repudiandae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias suscipit laudantium voluptatibus
+    libero ducimus necessitatibus esse veniam veritatis a, quae ab officia amet, labore nam dicta non quis, sunt aut.
+  </p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure corrupti odit inventore sequi. Animi
+    corporis excepturi amet praesentium laboriosam eos voluptate ex inventore? Incidunt sint magnam aperiam molestiae
+    repudiandae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias suscipit laudantium voluptatibus
+    libero ducimus necessitatibus esse veniam veritatis a, quae ab officia amet, labore nam dicta non quis, sunt aut.
+  </p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi et eos dolore harum esse accusamus, ipsum
+    aliquam praesentium doloribus dolor nam. Nostrum vel ratione asperiores magnam blanditiis, autem quae.</p>
+</body>
+
+</html>
