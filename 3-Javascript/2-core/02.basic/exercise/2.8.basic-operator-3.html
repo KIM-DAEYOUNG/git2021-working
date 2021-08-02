@@ -1,0 +1,23 @@
+<html>
+
+<body>
+  <script>
+
+    // + 있는데, 문자열이 껴있음. 문자열 결합 될거라고 생각
+    // -, / , * 수학연산으로 계산될거임
+    console.log("" + 1 + 0)    // "10" ,문자열 결합
+    console.log("" - 1 + 0)    // -1
+    console.log(true + false); // 1+0 = 1
+    console.log(6 / "3");      // 2
+    console.log("2" * "3");    // 6
+    console.log(4 + 5 + "px")  // "9px" , 4+5 숫자연산
+    console.log(7 / 0);        // Infinity 
+    console.log("  -9  " + 5); // " -9  5 " , 문자열 결합
+    console.log("  -9  " - 5)  // -14, 앞뒤 빈공간 제거됨 
+    console.log(null + 1)      // 1, null값은 0
+    console.log(undefined + 1) // NaN, undefined는 NaN
+    console.log(" \t \n" - 2)  // -2, 빈값( \t:탭(2칸~8칸)) 은 0 -2
+  </script>
+</body>
+
+</html>
