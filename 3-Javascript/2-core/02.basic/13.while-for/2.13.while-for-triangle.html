@@ -1,0 +1,25 @@
+<html>
+
+<body>
+  <!-- 참고용 코드 -->
+  <script>
+    let height = 7;
+    let result = "";
+
+    for (let i = 1; i < height * 2; i += 2) {
+      for (let j = 1; j < ((height * 2) - i) / 2; j++) {
+        result += " ";
+      }
+      for (let k = 1; k <= i; k++) {
+        result += "*";
+      }
+      for (let l = 1; l < ((height * 2) - i) / 2; l++) {
+        result += " ";
+      }
+      result += "\n";
+    }
+    console.log(result);
+  </script>
+</body>
+
+</html>

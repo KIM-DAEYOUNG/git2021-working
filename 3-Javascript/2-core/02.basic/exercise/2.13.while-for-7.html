@@ -2,33 +2,17 @@
 
 <body>
   <script>
-    // let num = 10;
-    // for (let i = 2; i <= num; i++) {
-    //   for(let j =2; j < i; j++) {}
-    //     if(i % j ==0) continue;
-    //   }
-    //   alert(i);
-    // }
-    // 입력값
-    let n = 20;
-    // i, j , k, l, m
-    // 2부터 입력받은 숫자까지 증가
-    for (let i = 2; i <= n; i++) {
-      // 소수인지 아닌지를 기록할 변수(flag)
-      let isPrime = true;
 
-      // 2부터 현재 숫자보다 작은 수 까지 반복
-      // 예) i == 5, j는 2~4
-      // 예) i == 8, j는 2~7
-      for (let j = 2; j < i; j++) {
-        // 나머지값이 0 이라면 1과 본인 이외에 다른 숫자로 나누기가 가능함
-        // 현재 숫자보다 작은 수로 나눠진다면 소수가 아님
-        if (i % j == 0) {
-          isPrime = false;
+    let num = 10; // 10을 입력 
+    for (let i = 2; i <= num; i++) { // 2부터 num까지 증감
+      let result = true;             // 소수인지 아닌지 판별
+      for (let j = 2; j < i; j++) {  // 2부터 i보다 작을때 까지 증감
+        if (i % j == 0) {            // 현재의 수 보다 작은수로 나눠지는지 판별
+          result = false;            // 불일치 하면 반복 중단
           break;
         }
       }
-      isPrime && console.log(i);
+      result && alert(i);
     }
   </script>
 </body>

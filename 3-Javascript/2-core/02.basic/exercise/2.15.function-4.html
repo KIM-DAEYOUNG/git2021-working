@@ -1,0 +1,25 @@
+<html>
+
+<body>
+  <script>
+    function pow(x, n) {     // 함수 생성
+      let squareNum = x;     // 변수 x에 대입
+      for (let i = 1; 1 <= n; i++) { // 초기값 1은 n보다 작을때까지 1증감한다 
+        squareNum **= x;    // x에 제곱된 값을 변수로 보낸다
+      }
+      return squareNum;
+      // if (num % 1 === 0) return (num + 1) * (num + 1)
+    }
+    let x = prompt("x값을 입력하세요", "");
+    let n = prompt("n의값을 입력하세요.", "");
+
+    if (n < 1) {
+      alert(`${n}는 양의정수가 아닙니다.`);
+    } else {
+      alert(pow(x, n));
+    }
+
+  </script>
+</body>
+
+</html>
