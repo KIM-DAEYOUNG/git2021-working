@@ -1,0 +1,20 @@
+<html>
+
+<body>
+  <script>
+    let sum = 0;  // 값 초기화
+    let salaries = {
+      John: 100,
+      Ann: 160,
+      Pete: 130
+    }
+
+    for (let prop in salaries) {  //salarise객체 안의 속성값을 돌린다
+      sum += salaries[prop];      // 속성값을 모두 더한다.
+    }
+    console.log(sum);
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+
+<body>
+  xw
+  <script>
+    // isEmpty 함수 만들기
+    // 객체에 프로퍼티가 하나도 없는경우 true,
+    // 아닌경우 false
+    function isEmpty(obj) {
+      // 속성 개수만큼
+      // 반복문이 실행된다면 속성이 있다는 얘기
+      for (let prop in obj) {
+        return false;
+      }
+      // 속성이 없다면 반복문은 스킵되고 true를 반환 
+      return true;
+    }
+    let schedule = {}; // 비어있는 객체 
+    alert(isEmpty(schedule));  // true
+    schedule["08:30"] = "get up";
+    alert(isEmpty(schedule)); // false
+  </script>
+</body>
+
+</html>
