@@ -1,0 +1,28 @@
+<html>
+
+<body>
+
+  <script>
+    // 콜 스택(call stack): 함수 호출 -> 실행 stack 자료구조에 넣어서 실행됨
+    // 함수 호출하면 가능 나중에 호출한 함수가 먼저 실행
+
+    function a() {          // 마지막 
+      b();
+      console.log("a");
+    }
+
+    function b() {         // 두번째 실행
+      c();
+      console.log("b");
+    }
+
+    function c() {        // 첫 실행
+
+      console.log("c");
+    }
+
+    a();
+  </script>
+</body>
+
+</html>
