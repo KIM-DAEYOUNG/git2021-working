@@ -1,0 +1,15 @@
+<html>
+
+<body>
+
+  <script>
+    function truncate(str, maxlength) {
+      return (str.length > maxlength) ? str.slice(0, maxlength - 1) + "..." : str;
+    } // maxlength가 str.length보다 작을때 임의의 수 만큼 인덱스 길이를 줄인다 
+
+    console.log(truncate("what I`d like to tell on this topics is:", 13));
+    console.log(truncate("Hi everyone!", 13));
+  </script>
+</body>
+
+</html>
