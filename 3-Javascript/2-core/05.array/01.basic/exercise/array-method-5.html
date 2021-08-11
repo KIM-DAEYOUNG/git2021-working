@@ -1,0 +1,37 @@
+<html>
+
+<body>
+
+  <script>
+    function copySorted(arr) {
+      return arr.slice().sort();             // 선언할 배열 값을 그대로 복사함
+    }
+    let arr = ["HTML", "JavaScript", "CSS"]; // 배열 선언
+
+    let sorted = copySorted(arr);
+
+    console.log(sorted);
+    console.log(arr);
+  </script>
+
+  <script>
+    // 강사님 코드
+    // 정렬을 하는데 기존 배열을 고치면 안됨
+    // 배열.sort는 기존배열을 변경함
+    function copySorted(arr) {
+      // 매개변수로 받은 배열을 복제
+      let copy = [...arr];
+      // 문자열 순서대로 정렬
+      return copy.sort();
+      //return copy.sort((a, b) => a.localeCompare(b));
+
+    }
+    let arr = ["HTML", "JavaScript", "CSS"]; // 배열 선언
+    let sorted = copySorted(arr);
+
+    console.log(sorted); // CSS, HTML, Javascript
+    console.log(arr);    // HTML, Javascript, CSS (no changes)
+  </script>
+</body>
+
+</html>

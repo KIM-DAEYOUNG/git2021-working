@@ -10,6 +10,20 @@
     console.log(truncate("what I`d like to tell on this topics is:", 13));
     console.log(truncate("Hi everyone!", 13));
   </script>
+
+  <script>
+    // 강사님 코드
+    function truncate(str, maxlength) {
+      return str.length > maxlength - 1
+        ? str.substr(0, maxlength - 1) + "..."
+        : str;
+
+    }
+
+    console.log(truncate("what I`d like to tell on this topics is:", 20));
+    console.log(truncate("Hi everyone!", 20));
+
+  </script>
 </body>
 
 </html>
