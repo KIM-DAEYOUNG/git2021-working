@@ -1,0 +1,22 @@
+<html>
+
+<body>
+
+  <div data-widget-name="menu">Choose the genre</div>
+
+  <script>
+    const elem = document.querySelector("[data-widget-name]");  // 상위태그 요소 불러오기
+
+    console.log(elem.getAttribute("data-widget-name"));        // 요소값 가져오기
+  </script>
+  <script>
+    // 강사님 코드
+    const div = document.querySelector("div");
+
+    // camel-case로 바뀜
+    // data-widget
+    console.log(div.dataset.widgetName);
+  </script>
+</body>
+
+</html>
