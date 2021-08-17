@@ -29,7 +29,8 @@
   </form>
 
 
-  <table class="table table-striped">
+
+  <table id="contact" class="table table-striped">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -57,7 +58,8 @@
       </tr>
       <tr>
         <th scope="row">3</th>
-        <td colspan="2"></td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
       </tr>
@@ -65,11 +67,11 @@
   </table>
   <script>
     /* 요소 선택 부분 */
-    const txtName = document.querySelector("#txt-memo");
+    const txtName = document.querySelector("#txt-name");
+    // const txtName = document.selectElementById("txtName");
     const txtPhone = document.querySelector("#txt-phone");
     const txtMail = document.querySelector("#txt-mail");
     const btnAdd = document.querySelector("#btn-add");
-    const ulList = document.querySelector("#ul-list");
     const formInput = document.querySelector("#form-input");
 
     /* 이벤트 등록 부분 */
@@ -103,15 +105,13 @@
     // 버튼에 이벤트 추가
     btnAdd.addEventListener("click", add);
 
-    // ul 태그에 이벤트 추가
-    tbody.addEventListener("click", remove);
+    //  태그에 이벤트 추가
+    td.addEventListener("click", remove);
 
 
     /* 이벤트 처리 부분 */
     // 목록 추가 이벤트 함수
     function add(event) {
-      // console.log(event);
-      // console.log(event.target);
       console.log(txtMemo.value);
 
       // 빈 값일 때 에러 메시지 처리
@@ -130,14 +130,14 @@
       // 생성할 템플릿 문자열
       // 삭제 버튼에 remove라는 임의의 클래스를 넣음
       const tbody = /*html*/`
-        <li class="list-group-item">
+        <tbody class="tbody-group-item">
           <button class="btn btn-outline-secondary btn-sm remove">삭제</button>          
           ${txtName.value}
-        </li>
+        </tbody>
         `
 
-      // ul 요소에 추가
-      tbody.insertAdjacentHTML("afterbegin", li);
+      // 요소에 추가
+      table.insertAdjacentHTML("afterbegin", tbody);
 
       // form 내부 요소의 입력값을 초기화
       formInput.reset();
@@ -149,7 +149,7 @@
       if (event.target.className.includes("remove")) {
         // 삭제버튼
         const btnRemove = event.target;
-        // 삭제버튼의 부모 노드인 li
+        // 삭제버튼의 부모 노드
         const tbody = btnRemove.parentNode;
         tbody.remove();
       }
