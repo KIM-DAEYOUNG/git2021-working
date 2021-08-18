@@ -29,42 +29,21 @@
   </form>
 
 
+  <div>
+    <table id="contact" class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">이름</th>
+          <th scope="col">전화번호</th>
+          <th scope="col">이메일</th>
+          <th scope="col">작업</th>
+        </tr>
+      </thead>
+      <tbody id="contact" class="table table-striped">
+      </tbody>
+    </table>
+  </div>
 
-  <table id="contact" class="table table-striped">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">이름</th>
-        <th scope="col">전화번호</th>
-        <th scope="col">이메일</th>
-        <th scope="col">작업</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <!-- <td><input type="button" value="삭제" onclick="delRow();" </td> -->
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <script>
     /* 요소 선택 부분 */
     const txtName = document.querySelector("#txt-name");
@@ -73,6 +52,14 @@
     const txtMail = document.querySelector("#txt-mail");
     const btnAdd = document.querySelector("#btn-add");
     const formInput = document.querySelector("#form-input");
+
+    html += '<tr>';
+    html += '<td>' + txtName + '</td>';
+    html += '<td>' + txtPhone + '</td>';
+    html += '<td>' + txtMail + '</td>';
+    html += '<td>' + btnAdd + '</td>';
+    html += '</tr>';
+
 
     /* 이벤트 등록 부분 */
     // 입력박스에 키보드 이벤트 추가
@@ -106,7 +93,7 @@
     btnAdd.addEventListener("click", add);
 
     //  태그에 이벤트 추가
-    td.addEventListener("click", remove);
+    tbody.addEventListener("click", remove);
 
 
     /* 이벤트 처리 부분 */

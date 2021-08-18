@@ -1,0 +1,21 @@
+<html>
+
+<body>
+  <button id="btn-add"> 입력 </button>
+  <!-- <script>
+    // HTML 코드 자리에 JavaScript 코드가 추가되어 가독성이 떨어지고,
+    // 유지보수가 어려워지는 단점이 있다 (addEventListener 사용 권장)
+    
+    const btnAdd = document.querySelector("#btn-add").onclick = function () {
+      alert("입력");
+    }
+  </script> -->
+  <script>
+    const btnAdd = document.querySelector("#btn-add");
+    btnAdd.addEventListener("click", function () {
+      alert("입력");
+    });
+  </script>
+</body>
+
+</html>
