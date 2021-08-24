@@ -6,7 +6,7 @@ const Navigation = () => {
       <li>
         <Link to="/">Home</Link>
       </li>
-      <li>
+      {/* <li>
         <Link to="/components">Components</Link>
       </li>
       <li>
@@ -23,6 +23,12 @@ const Navigation = () => {
       </li>
       <li>
         <Link to="/bootstrap">BootStrap</Link>
+      </li> */}
+      <li>
+        <Link to="/todo">Todo</Link>
+      </li>
+      <li>
+        <Link to="/feeds">Feeds</Link>
       </li>
     </ul>
   );
